@@ -2,6 +2,7 @@
 
 ### Getting started
 
+`npm install`
 `npm test` or `npm test -- --watch`
 ### Deliverables
 - [x] Njurfunktion
