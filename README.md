@@ -2,10 +2,11 @@
 
 ### Getting started
 
-`npm install`
+1. Run `npm install`
+2. `npm test` or `npm test -- --watch`
 
-`npm test` or `npm test -- --watch`
 ### Deliverables
+
 - [x] Njurfunktion
 - [x] BMI
 - [x] Centor
