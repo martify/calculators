@@ -1,0 +1,21 @@
+{
+  "name": "calculators",
+  "version": "1.0.0",
+  "description": "Medical calculators",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martify/calculators.git"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.12",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-typescript": "^7.16.7",
+    "@types/jest": "^27.5.2",
+    "babel-jest": "^27.5.1",
+    "jest": "^27.4.5",
+    "typescript": "^4.8.2"
+  }
+}
