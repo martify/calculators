@@ -59,4 +59,4 @@ function getWetbags(age: number, definition: AgeDefine) {
             stesolid_iv, stesolid_pr, adrenalin_inh, albuterol, atrovent, atropin, amiodaron}
 }
 
-export {getWetbags}
+export {getWetbags, isValidAge}
