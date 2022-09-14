@@ -9,3 +9,21 @@ test.each`
 `('it should return correct time', ({size, pressure, flow, expected}) => {
     expect(calculateSyrgas(size, pressure, flow)).toEqual(expected)
 })
+
+test('it should throw error for invalid number', () => {
+    expect(() => {
+        calculateSyrgas(0, 3, 7)
+    }).toThrow('Invalid number for syrgas')
+})
+
+test('it should throw error for invalid number', () => {
+    expect(() => {
+        calculateSyrgas(6, 0, 2)
+    }).toThrow('Invalid number for syrgas')
+})
+
+test('it should throw error for invalid number', () => {
+    expect(() => {
+        calculateSyrgas(10, 2, 0)
+    }).toThrow('Invalid number for syrgas')
+})
