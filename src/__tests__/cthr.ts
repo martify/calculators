@@ -1,4 +1,4 @@
-import {calcHeadRule} from '../CTHR'
+import {calcHeadRule} from '../cthr'
 
 test('7 points', () => {
     const fields = {
