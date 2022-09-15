@@ -17,7 +17,7 @@
 - [ ] CHADSVASc
 - [ ] CT Head Rule
 - [ ] Syrgas
-- [ ] Albuminkorrigerat kalcium
+- [x] Albuminkorrigerat kalcium
 - [ ] Kroppsyta
 - [ ] DVT-score
 - [ ] Lungemboli
