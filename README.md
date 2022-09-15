@@ -15,7 +15,7 @@
 - [x] Dropptakt
 - [ ] WETBAGS-5A
 - [ ] CHADSVASc
-- [ ] CT Head Rule
+- [x] CT Head Rule
 - [ ] Syrgas
 - [ ] Albuminkorrigerat kalcium
 - [ ] Kroppsyta
