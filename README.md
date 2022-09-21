@@ -20,7 +20,7 @@
 - [ ] Albuminkorrigerat kalcium
 - [ ] Kroppsyta
 - [ ] DVT-score
-- [ ] Lungemboli
+- [x] Lungemboli
 - [ ] NIHSS
 - [ ] Ottawa Ankle
 - [ ] Ottawa knee
