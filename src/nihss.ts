@@ -18,8 +18,8 @@ function countOrientation(fields: Orientation): number {
 function calculateStrokeScale(awake: number, fields: Orientation, eyes: number, sight: number, face: number,
     armRight: number, armLeft: number, legRight: number, legLeft: number, ataxi: number,
     sensibility: number, language: number, dysarthria: number, sensory: number) {
-    const orientScore = countOrientation(fields)
-    return awake + eyes + sight + face + armLeft + armRight + legLeft + legRight + ataxi + sensibility + language + dysarthria + sensory + orientScore
+    
+    return awake + eyes + sight + face + armLeft + armRight + legLeft + legRight + ataxi + sensibility + language + dysarthria + sensory + countOrientation(fields)
 
     }
 
