@@ -15,8 +15,8 @@ function validateVars(variables: number[]){
 
 function calculateSyrgas(size: number, pressure: number, flow: number){
     validateVars([size, pressure, flow])
-    const time = Math.round(size * pressure / flow)
-    return time
+    
+    return Math.round(size * pressure / flow)
 }
 
 export {calculateSyrgas}
