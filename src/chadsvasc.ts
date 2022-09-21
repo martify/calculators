@@ -24,14 +24,14 @@ function addRisks(values: Risks): number {
 }
 
 function calculateAgeRisk(age: number): number{
-    let age_score = 0
+    let ageScore = 0
     if (age >= 75) {
-        age_score += 2
+        ageScore += 2
     } 
     else if (age >= 65 && age < 75) {
-        age_score++
+        ageScore++
     }
-    return age_score
+    return ageScore
 }
 
 function scoreToText(score: number, values: Risks): string {
@@ -70,6 +70,8 @@ function riskPercentage(score:number) {
             return 6.7
         case 9:
             return 15.2
+        default:
+            throw new Error("Unsupported score " + score)
     }
 }
 
@@ -77,12 +79,12 @@ function calculateRisks(age: number, values: Risks){
     if (!isValidAge(age)) {
         throw new Error('Invalid age')
     }
-    const risk_score = addRisks(values)
+    const riskScore = addRisks(values)
     const age_score = calculateAgeRisk(age)
-    const final_score = age_score + risk_score
-    const message = scoreToText(final_score, values)
-    const risk_perc = riskPercentage(final_score)
-    return {final_score, message, risk_perc}
+    const finalScore = age_score + riskScore
+    const message = scoreToText(finalScore, values)
+    const riskPerc = riskPercentage(finalScore)
+    return {finalScore, message, riskPerc}
 }
 
-export {calculateRisks}
+export {calculateRisks, isValidAge}

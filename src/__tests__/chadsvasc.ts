@@ -9,10 +9,10 @@ test("score = 4", () => {
         hasVascular: false,
         isWoman: true
     }
-    const {final_score, message, risk_perc} = calculateRisks(72, values)
-    expect(final_score).toEqual(4)
+    const {finalScore, message, riskPerc} = calculateRisks(72, values)
+    expect(finalScore).toEqual(4)
     expect(message).toEqual('Waran eller NOAC')
-    expect(risk_perc).toEqual(4.0)
+    expect(riskPerc).toEqual(4.0)
 } )
 
 test("score = 0", () => {
@@ -24,10 +24,10 @@ test("score = 0", () => {
         hasVascular: false,
         isWoman: false
     }
-    const {final_score, message, risk_perc} = calculateRisks(64, values)
-    expect(final_score).toEqual(0)
+    const {finalScore, message, riskPerc} = calculateRisks(64, values)
+    expect(finalScore).toEqual(0)
     expect(message).toEqual('Ingen behandling')
-    expect(risk_perc).toEqual(0)
+    expect(riskPerc).toEqual(0)
 } )
 
 test("only 'is woman' ", () => {
@@ -39,10 +39,10 @@ test("only 'is woman' ", () => {
         hasVascular: false,
         isWoman: true
     }
-    const {final_score, message, risk_perc} = calculateRisks(60, values)
-    expect(final_score).toEqual(1)
+    const {finalScore, message, riskPerc} = calculateRisks(60, values)
+    expect(finalScore).toEqual(1)
     expect(message).toEqual('Waran eller NOAC (om poäng endast för kvinnligt kön rekommenderas ofta ingen behandling)')
-    expect(risk_perc).toEqual(1.3)
+    expect(riskPerc).toEqual(1.3)
 } )
 
 test("score = 9", () => {
@@ -54,10 +54,10 @@ test("score = 9", () => {
         hasVascular: true,
         isWoman: true
     }
-    const {final_score, message, risk_perc} = calculateRisks(80, values)
-    expect(final_score).toEqual(9)
+    const {finalScore, message, riskPerc} = calculateRisks(80, values)
+    expect(finalScore).toEqual(9)
     expect(message).toEqual('Waran eller NOAC')
-    expect(risk_perc).toEqual(15.2)
+    expect(riskPerc).toEqual(15.2)
 } )
 
 test('it should throw if too high age', () => {
