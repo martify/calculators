@@ -1,8 +1,12 @@
 import { getWetbags } from "../wetbags"
 
-test('it should show correct values', () => {
+test('it should show correct values when 4 months old', () => {
+    const age = 4
+    const isMonths = 1
+
     const {weight, defib, conversion, tube, bolus, bolusTrauma, adrenalin, glucose,
-        stesolidIV, stesolidPR, adrenalinINH, albuterol, atrovent, atropin, amiodaron} = getWetbags(4, 1)
+        stesolidIV, stesolidPR, adrenalinINH, albuterol, atrovent, atropin, amiodaron} = getWetbags(age, isMonths)
+
     expect(weight).toEqual(6)
     expect(defib).toEqual(24)
     expect(conversion).toEqual(6)
@@ -20,9 +24,38 @@ test('it should show correct values', () => {
     expect(amiodaron).toEqual(30)
 })
 
-test('it should show correct values', () => {
+test('it should show correct values when 5 years old', () => {
+    const age = 5
+    const isMonths = 0
+
     const {weight, defib, conversion, tube, bolus, bolusTrauma, adrenalin, glucose,
-        stesolidIV, stesolidPR, adrenalinINH, albuterol, atrovent, atropin, amiodaron} = getWetbags(8, 0)
+        stesolidIV, stesolidPR, adrenalinINH, albuterol, atrovent, atropin, amiodaron} = getWetbags(age, isMonths)
+
+    expect(weight).toEqual(18)
+    expect(defib).toEqual(72)
+    expect(conversion).toEqual(18)
+    expect(tube).toEqual(5.25)
+    expect(bolus).toEqual(360)
+    expect(bolusTrauma).toEqual(180)
+    expect(adrenalin).toEqual(0.18)
+    expect(glucose).toEqual(36)
+    expect(stesolidIV).toEqual(4.5)
+    expect(stesolidPR).toEqual(9)
+    expect(adrenalinINH).toEqual(5)
+    expect(albuterol).toEqual(5)
+    expect(atrovent).toEqual(0.25)
+    expect(atropin).toEqual(0.36)
+    expect(amiodaron).toEqual(90)
+})
+
+
+test('it should show correct values when 8 years old', () => {
+    const age = 8
+    const isMonths = 0
+
+    const {weight, defib, conversion, tube, bolus, bolusTrauma, adrenalin, glucose,
+        stesolidIV, stesolidPR, adrenalinINH, albuterol, atrovent, atropin, amiodaron} = getWetbags(age, isMonths)
+
     expect(weight).toEqual(31)
     expect(defib).toEqual(124)
     expect(conversion).toEqual(31)
