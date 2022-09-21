@@ -80,8 +80,8 @@ function calculateRisks(age: number, values: Risks){
         throw new Error('Invalid age')
     }
     const riskScore = addRisks(values)
-    const age_score = calculateAgeRisk(age)
-    const finalScore = age_score + riskScore
+    const ageScore = calculateAgeRisk(age)
+    const finalScore = ageScore + riskScore
     const message = scoreToText(finalScore, values)
     const riskPerc = riskPercentage(finalScore)
     return {finalScore, message, riskPerc}
