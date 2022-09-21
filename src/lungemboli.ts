@@ -46,8 +46,8 @@ function scoreToText(score: number) {
 
 function getRisk(fields: Risks) {
     const score = calculateScore(fields)
-    const message = scoreToText(score)
-    return {score, message}
+    
+    return {score, message: scoreToText(score)}
 }
 
 export {getRisk}
