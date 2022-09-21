@@ -22,9 +22,8 @@ function calculatePoints(fields: Criteria): number {
     if (points >= 1){
         return 'CT skalle rekommenderas'
     }
-    else {
-        return 'CT skalle behövs inte'
-    }
+
+    return 'CT skalle behövs inte'
   }
 
   function calcHeadRule(fields: Criteria){
