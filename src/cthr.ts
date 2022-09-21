@@ -26,10 +26,9 @@ function calculatePoints(fields: Criteria): number {
     return 'CT skalle behövs inte'
   }
 
-  function calcHeadRule(fields: Criteria){
+  function calcHeadRule(fields: Criteria): string{
     const points = calculatePoints(fields)
-    const message = pointsToText(points)
-    return message
+    return pointsToText(points)
   }
 
 export {calcHeadRule}
