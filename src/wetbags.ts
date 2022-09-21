@@ -3,8 +3,28 @@ enum AgeDefine {
     Months = 1
 }
 
-const isValidAge = (age: unknown): boolean =>
-    typeof age === 'number' && age >= 0 && age <= 12 
+const MAX_YEARS = 12
+const MAX_MONTHS = 12 * 12
+
+const isValidAge = (age: unknown, definition: unknown): boolean => {
+    if (typeof age !== 'number') {
+        return false
+    }
+    
+    if (typeof definition !== 'number') {
+        return false
+    }
+    
+    if (definition === AgeDefine.Years && age >= 0 && age <= MAX_YEARS) {
+        return true
+    }
+
+    if (definition === AgeDefine.Months && age >= 0 && age <= MAX_MONTHS) {
+        return true
+    }
+
+    return false
+}
 
 
 function getWeight(age: number) {
@@ -33,7 +53,7 @@ function getAlbuterol(age: number){
 }
 
 function getWetbags(age: number, definition: AgeDefine) {
-    if (!isValidAge(age)){
+    if (!isValidAge(age, definition)){
         throw new Error('Invalid age for wetbags')
     }
 
