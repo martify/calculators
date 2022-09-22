@@ -16,7 +16,7 @@
 - [x] WETBAGS-5A
 - [x] CHADSVASc
 - [x] CT Head Rule
-- [ ] Syrgas
+- [x] Syrgas
 - [ ] Albuminkorrigerat kalcium
 - [ ] Kroppsyta
 - [ ] DVT-score
