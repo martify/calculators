@@ -18,7 +18,7 @@
 - [x] CT Head Rule
 - [x] Syrgas
 - [ ] Albuminkorrigerat kalcium
-- [ ] Kroppsyta
+- [x] Kroppsyta
 - [ ] DVT-score
 - [ ] Lungemboli
 - [ ] NIHSS
