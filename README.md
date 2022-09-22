@@ -13,9 +13,9 @@
 - [x] Infusionsmängd
 - [x] Infusionstid
 - [x] Dropptakt
-- [ ] WETBAGS-5A
-- [ ] CHADSVASc
-- [ ] CT Head Rule
+- [x] WETBAGS-5A
+- [x] CHADSVASc
+- [x] CT Head Rule
 - [x] Syrgas
 - [ ] Albuminkorrigerat kalcium
 - [ ] Kroppsyta
