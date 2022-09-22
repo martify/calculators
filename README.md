@@ -25,7 +25,7 @@
 - [ ] Ottawa Ankle
 - [ ] Ottawa knee
 - [ ] Glasgow Coma Scale
-- [ ] QTc
+- [x] QTc
 - [ ] Ögonsjukdomar
 - [ ] Osmolgap
 - [x] Anjongap
