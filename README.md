@@ -30,7 +30,7 @@
 - [ ] Osmolgap
 - [x] Anjongap
 - [ ] CRB65
-- [ ] Basalmetabolism
+- [x] Basalmetabolism
 - [ ] Enhetsomvandlaren (not working at the moment)
 - [ ] Dos efter yta
 - [ ] Child-Pugh
