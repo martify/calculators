@@ -15,7 +15,7 @@ test('it should show ordered risks correctly', () => {
     coloredRings: false
     }
     expect(getDiagnoses(fields)).toEqual({
-        "1": ["hinna", "irit"], 
+        "1": ["nathinna", "irit"], 
         "2": ["glaskropp", "keratit"], 
         "3": ["makula", "konjunk", "glaukom"]
     })
