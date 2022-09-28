@@ -38,6 +38,6 @@ test('it should show ordered risks correctly', () => {
     expect(getDiagnoses(fields)).toEqual({
         "1": ["konjunk", "glaukom"], 
         "2": ["keratit", "irit"], 
-        "3": ["makula", "hinna", "glaskropp"]
+        "3": ["makula", "nathinna", "glaskropp"]
     })
 })

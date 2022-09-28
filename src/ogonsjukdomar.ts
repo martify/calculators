@@ -13,7 +13,7 @@ type Symptoms = {
 }
 
 function calculateSymptomes(fields: Symptoms) {
-    let probScale = {irit: 0, keratit: 0, glaukom: 0, konjunk: 0, glaskropp: 0, hinna: 0, makula: 0}
+    let probScale = {irit: 0, keratit: 0, glaukom: 0, konjunk: 0, glaskropp: 0, nathinna: 0, makula: 0}
     if (fields.redEyes) {
         probScale.irit++
         probScale.keratit++
@@ -40,14 +40,14 @@ function calculateSymptomes(fields: Symptoms) {
     if (fields.movingSpots) {
         probScale.irit++
         probScale.glaskropp++
-        probScale.hinna++
+        probScale.nathinna++
     }
     if (fields.hasFlicker) {
         probScale.glaskropp++
-        probScale.hinna++
+        probScale.nathinna++
     }
     if (fields.darkShadow) {
-        probScale.hinna++
+        probScale.nathinna++
     }
     if (fields.hookSight) {
         probScale.makula++
