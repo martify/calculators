@@ -11,12 +11,12 @@ test.each`
 
 test('it should throw error for incorrect millimole', () => {
     expect(() => {
-        getOsmolgap(-3, 12 ,4 , 66).toThrow('Invalid millimole for osmolgap')
-    })
+        getOsmolgap(-3, 12 ,4 , 66)
+    }).toThrow('Invalid millimole for osmolgap')
 })
 
 test('it should throw error for incorrect millimole', () => {
     expect(() => {
-        getOsmolgap(17, 12 , 100000, 66).toThrow('Invalid millimole for osmolgap')
-    })
+        getOsmolgap(17, 12 , 100000, 66)
+    }).toThrow('Invalid millimole for osmolgap')
 })
