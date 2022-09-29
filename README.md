@@ -37,7 +37,7 @@
 - [ ] GRACE-SCORE
 - [ ] APRI-score
 - [ ] PERC-rule
-- [ ] PESI-score
+- [x] PESI-score
 - [ ] HAS-BLED
 - [ ] SCORE2
 - [ ] AIR-score
