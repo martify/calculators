@@ -42,7 +42,7 @@
 - [ ] SCORE2
 - [ ] AIR-score
 - [ ] GUCI
-- [ ] Winters formel
+- [x] Winters formel
 - [ ] TIMI-score STEMI
 - [ ] TIMI-score NSTEMI
 - [ ] HbA1c
