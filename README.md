@@ -40,7 +40,7 @@
 - [ ] PESI-score
 - [ ] HAS-BLED
 - [ ] SCORE2
-- [ ] AIR-score
+- [x] AIR-score
 - [ ] GUCI
 - [ ] Winters formel
 - [ ] TIMI-score STEMI
