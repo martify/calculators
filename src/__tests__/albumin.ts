@@ -2,8 +2,8 @@ import { correctedCalcium } from "../albumin"
 
 test.each`
     millimole | gram | expected
-    ${30}       ${120}  ${28}
-    ${95}       ${10}   ${96}
+    ${30}       ${120}  ${28.4}
+    ${95}       ${10}   ${95.6}
     ${10}       ${40}   ${10}
 `('it should return correct calcium value', ({millimole, gram, expected}) => {
     expect(correctedCalcium(millimole, gram)).toEqual(expected)
