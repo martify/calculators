@@ -41,7 +41,7 @@
 - [ ] HAS-BLED
 - [ ] SCORE2
 - [ ] AIR-score
-- [ ] GUCI
+- [x] GUCI
 - [ ] Winters formel
 - [ ] TIMI-score STEMI
 - [ ] TIMI-score NSTEMI
