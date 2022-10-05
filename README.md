@@ -38,7 +38,7 @@
 - [ ] APRI-score
 - [ ] PERC-rule
 - [ ] PESI-score
-- [ ] HAS-BLED
+- [x] HAS-BLED
 - [ ] SCORE2
 - [ ] AIR-score
 - [ ] GUCI
