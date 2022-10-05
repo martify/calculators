@@ -16,4 +16,4 @@ function correctedCalcium(millimole: number, gram: number) {
     return Math.round((millimole + 0.02 * (40 - gram)) * 10) / 10
 }
 
-export {correctedCalcium, isValidMillimole}
+export {correctedCalcium, isValidMillimole, isValidGram}
