@@ -8,7 +8,7 @@ function calculateAgeRisk(age: number) {
         return 0
     }
     else if (age < 45 && age >= 35) {
-        return 0 + (age - 35) * 1.8
+        return  (age - 35) * 1.8
     }
     else if (age < 55 && age >= 45) {
         return 18 + (age - 45) * 1.8
@@ -17,7 +17,7 @@ function calculateAgeRisk(age: number) {
         return 36 + (age - 55) * 1.8
     }
     else if (age < 75 && age >= 65) {
-        return 54 + (age - 35) * 1.9
+        return 54 + (age - 65) * 1.9
     }
     else if (age < 85 && age >= 75) {
         return 73 + (age - 75) * 1.8
@@ -33,7 +33,7 @@ function calculatePulse(pulse: number) {
         return 0
     }
     else if (pulse < 80 && pulse >= 70) {
-        return 0 + (pulse - 70) * 0.3
+        return  (pulse - 70) * 0.3
     }
     else if (pulse < 90 && pulse >= 80) {
         return 3 + (pulse - 80) * 0.2
@@ -136,7 +136,53 @@ function calculateKillip(killip: number) {
 
 
 function scoreToProb(score: number) {
-    
+    if (score <= 6) return 0.2
+    else if (score <= 27) return 0.4
+    else if (score <= 39) return 0.6
+    else if (score <= 48) return 0.8
+    else if (score <= 55) return 1
+    else if (score <= 60) return 1.2
+    else if (score <= 65) return 1.4
+    else if (score <= 69) return 1.6
+    else if (score <= 73) return 1.8
+    else if (score <= 76) return 2
+    else if (score <= 88) return 3
+    else if (score <= 97) return 4
+    else if (score <= 104) return 5
+    else if (score <= 110) return 6
+    else if (score <= 115) return 7
+    else if (score <= 119) return 8
+    else if (score <= 123) return 9
+    else if (score <= 126) return 10
+    else if (score <= 129) return 11
+    else if (score <= 132) return 12
+    else if (score <= 134) return 13
+    else if (score <= 137) return 14
+    else if (score <= 139) return 15
+    else if (score <= 141) return 16
+    else if (score <= 143) return 17
+    else if (score <= 145) return 18
+    else if (score <= 147) return 19
+    else if (score <= 149) return 20
+    else if (score <= 150) return 21
+    else if (score <= 152) return 22
+    else if (score <= 153) return 23
+    else if (score <= 155) return 24
+    else if (score <= 156) return 25
+    else if (score <= 158) return 26
+    else if (score <= 159) return 27
+    else if (score <= 160) return 28
+    else if (score <= 162) return 29
+    else if (score <= 163) return 30
+    else if (score <= 174) return 40
+    else if (score <= 183) return 50
+    else if (score <= 191) return 60
+    else if (score <= 200) return 70
+    else if (score <= 208) return 80
+    else if (score <= 219) return 90
+    return 99
+
+
 }
 
 function getRisk(age: number, pulse: number, bloodPressure: number, creatine: number, killip: number, heartStop: boolean, stDeviation: boolean, hightendHeart: boolean) {
@@ -148,7 +194,8 @@ function getRisk(age: number, pulse: number, bloodPressure: number, creatine: nu
     if (heartStop) totalScore += 30
     if (stDeviation) totalScore += 17
     if (hightendHeart) totalScore += 13
-    return totalScore
+    const roundedScore = Math.round(totalScore)
+    return {roundedScore, prob: scoreToProb(totalScore)}
 }
 
 export {getRisk, isValidAge}
