@@ -19,7 +19,7 @@
 - [x] Syrgas
 - [x] Albuminkorrigerat kalcium
 - [x] Kroppsyta
-- [ ] DVT-score
+- [x] DVT-score
 - [ ] Lungemboli
 - [ ] NIHSS
 - [ ] Ottawa Ankle
