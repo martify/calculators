@@ -9,7 +9,7 @@ test("score 5", () => {
         noBend: true,
         noPressure: true
     }
-    expect(getKnee(fields)).toEqual("Kriterierna inte uppfylla: knät kan behöva röntgas")
+    expect(getKnee(fields)).toEqual("Kriterierna inte uppfyllda: knät kan behöva röntgas")
 })
 
 test("score 3", () => {
