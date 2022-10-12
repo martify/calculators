@@ -24,7 +24,7 @@
 - [ ] NIHSS
 - [ ] Ottawa Ankle
 - [ ] Ottawa knee
-- [ ] Glasgow Coma Scale
+- [x] Glasgow Coma Scale
 - [ ] QTc
 - [ ] Ögonsjukdomar
 - [ ] Osmolgap
