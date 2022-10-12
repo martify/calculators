@@ -1,4 +1,4 @@
-type Symptomes = {
+export type Symptomes = {
     newConfusion: boolean,
     breathFreq: boolean,
     hasHypotoni: boolean,
