@@ -43,7 +43,7 @@
 - [ ] AIR-score
 - [ ] GUCI
 - [ ] Winters formel
-- [ ] TIMI-score STEMI
+- [x] TIMI-score STEMI
 - [ ] TIMI-score NSTEMI
 - [ ] HbA1c
 - [ ] Insulin
