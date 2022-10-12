@@ -10,14 +10,6 @@ type Hasbled = {
     muchAlcohol: boolean
 }
 
-function calculateScore(fields: Hasbled): number {
-    let score = 0
-    Object.values(fields).forEach(value => {
-        if (value) score++
-    })
-    return score
-}
-
 function scoreToText(score: number) {
     if (score < 3) {
         return "Lägre blödningsrisk"
@@ -26,7 +18,7 @@ function scoreToText(score: number) {
 }
 
 function getRisk(fields: Hasbled) {
-    const score = calculateScore(fields)
+    const score = Object.values(fields).reduce((sum, isRisk) => (isRisk ? sum + 1: sum), 0)
     const message = scoreToText(score)
     return {score, message}
 }
