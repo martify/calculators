@@ -1,18 +1,8 @@
-type Ancle = {
+export type Ancle = {
     immediateProblem: boolean,
     delayedProblem: boolean,
     isSoreOB: boolean,
     isSoreON: boolean
-}
-
-function getScore(fields: Ancle) {
-    let score = 0
-    Object.values(fields).forEach(value => {
-        if (value) {
-            score++
-        }
-    })
-    return score
 }
 
 function scoreToText(score: number) {
@@ -23,7 +13,7 @@ function scoreToText(score: number) {
 }
 
 function getAncleRule(fields: Ancle) {
-    const score = getScore(fields)
+    const score = Object.values(fields).reduce((sum, isRisk) => (isRisk ? sum + 1: sum), 0)
 
     return scoreToText(score)
     
