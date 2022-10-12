@@ -1,4 +1,4 @@
-type Symptomes = {
+export type Symptomes = {
     isMale: boolean,
     hasCancer: boolean,
     heartFailure: boolean,
