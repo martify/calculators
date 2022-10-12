@@ -1,4 +1,4 @@
-type Hasbled = {
+export type Hasbled = {
     hasHypertoni: boolean,
     kidneyIssue: boolean,
     liverIssue: boolean,
