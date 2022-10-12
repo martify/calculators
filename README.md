@@ -26,7 +26,7 @@
 - [x] Ottawa knee
 - [ ] Glasgow Coma Scale
 - [x] QTc
-- [ ] Ögonsjukdomar
+- [x] Ögonsjukdomar
 - [ ] Osmolgap
 - [x] Anjongap
 - [ ] CRB65
