@@ -23,7 +23,7 @@
 - [x] Lungemboli
 - [ ] NIHSS
 - [ ] Ottawa Ankle
-- [ ] Ottawa knee
+- [x] Ottawa knee
 - [ ] Glasgow Coma Scale
 - [ ] QTc
 - [ ] Ögonsjukdomar
