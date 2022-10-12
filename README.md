@@ -35,7 +35,7 @@
 - [ ] Dos efter yta
 - [ ] Child-Pugh
 - [ ] GRACE-SCORE
-- [ ] APRI-score
+- [x] APRI-score
 - [ ] PERC-rule
 - [ ] PESI-score
 - [ ] HAS-BLED
