@@ -63,3 +63,19 @@ test('It should show correct risk percentages', () => {
     }
     expect(getTimiNStemi(90, fields)).toEqual({"heart": 2.3, "mort": 1.2, "revasc": 1.2})
 })
+
+test('It should show correct risk percentages', () => {
+    const fields = {
+        diabetes: false,
+        hypertoni: false,
+        cholesterol: false,
+        familyKorona: false,
+        smoker: true,
+        knownKorona: false,
+        usedASA: true,
+        angina: false,
+        stChange: false,
+        heartMark: false
+    }
+    expect(getTimiNStemi(90, fields)).toEqual({"heart": 2.1, "mort": 1, "revasc": 6})
+})

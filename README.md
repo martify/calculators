@@ -44,7 +44,7 @@
 - [ ] GUCI
 - [ ] Winters formel
 - [ ] TIMI-score STEMI
-- [ ] TIMI-score NSTEMI
+- [x] TIMI-score NSTEMI
 - [ ] HbA1c
 - [ ] Insulin
 - [ ] Brinavessdos

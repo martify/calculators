@@ -1,4 +1,4 @@
-type Symptopmes = {
+export type Symptopmes = {
     diabetes: boolean,
     hypertoni: boolean,
     cholesterol: boolean,
@@ -12,18 +12,9 @@ type Symptopmes = {
 }
 
 function calculateScore(age: number, fields: Symptopmes) {
-    let score = 0
-    let riskScore = 0
-    Object.values(fields).splice(0, 5).forEach(value => {
-        if (value) {
-            riskScore++
-        }
-    })
-    Object.values(fields).splice(5, 10).forEach(value => {
-        if (value){
-            score++
-        }
-    })
+    const riskScore = Object.values(fields).splice(0, 5).reduce((sum, isRisk) => (isRisk ? sum + 1 : sum), 0)
+
+    let score = Object.values(fields).splice(5, 10).reduce((sum, isRisk) => (isRisk ? sum + 1 : sum), 0)
     if (riskScore >= 3) {
         score++
     }
