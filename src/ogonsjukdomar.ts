@@ -76,7 +76,6 @@ function mergeDiagnoses(sortedScale: [string, any][]) {
     sortedScale.forEach(value => {
         let diagnoses = value[0]
         let rank = value[1]
-        console.log(final)
         if(lastValue != rank) {
             place++
             final = {...final, [place]: [diagnoses]}
@@ -88,7 +87,6 @@ function mergeDiagnoses(sortedScale: [string, any][]) {
         }
 
     })
-    console.log(final)
     return final
 } 
 
