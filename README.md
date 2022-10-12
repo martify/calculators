@@ -21,7 +21,7 @@
 - [x] Kroppsyta
 - [x] DVT-score
 - [x] Lungemboli
-- [ ] NIHSS
+- [x] NIHSS
 - [ ] Ottawa Ankle
 - [x] Ottawa knee
 - [ ] Glasgow Coma Scale
