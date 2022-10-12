@@ -34,7 +34,7 @@
 - [ ] Enhetsomvandlaren (not working at the moment)
 - [ ] Dos efter yta
 - [ ] Child-Pugh
-- [ ] GRACE-SCORE
+- [x] GRACE-SCORE
 - [ ] APRI-score
 - [ ] PERC-rule
 - [ ] PESI-score
