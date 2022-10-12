@@ -5,16 +5,6 @@ type Symptomes = {
     age65: boolean
 }
 
-function calculateScore(fields: Symptomes) {
-    let score = 0
-    Object.values(fields).forEach(value => {
-        if (value) {
-            score++
-        }
-    })
-    return score
-}
-
 function scoreToText(score) {
     if (score >= 3) {
         return "Sjukhusvård, överäg IVA"
@@ -31,7 +21,7 @@ function scoreToText(score) {
 }
 
 function getPneumoniaScore(fields: Symptomes) {
-    const score = calculateScore(fields)
+    const score = Object.values(fields).reduce((sum, risk) => (risk ? sum + 1: sum), 0)
     const message = scoreToText(score)
     return {score, message}
 }
