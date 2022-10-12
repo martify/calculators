@@ -36,7 +36,7 @@
 - [ ] Child-Pugh
 - [ ] GRACE-SCORE
 - [ ] APRI-score
-- [ ] PERC-rule
+- [x] PERC-rule
 - [ ] PESI-score
 - [ ] HAS-BLED
 - [ ] SCORE2 - måste införliva SCORE2OP i den.
