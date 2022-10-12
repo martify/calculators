@@ -16,10 +16,10 @@ test('It should return correct value for score and mortality', () => {
 
 test('It should return correct value for score and mortality', () => {
     const fields = {
-        diabetes: true,
+        diabetes: false,
         hypertoni: false,
-        anginaPectoris: true,
-        killipTwo: false,
+        anginaPectoris: false,
+        killipTwo: true,
         highST: false,
         longTime: false
     }

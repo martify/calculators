@@ -1,4 +1,4 @@
-type Symptomes = {
+export type Symptoms = {
     diabetes: boolean,
     hypertoni: boolean,
     anginaPectoris: boolean,
@@ -14,7 +14,7 @@ const isValidWeight = (weight: unknown): boolean =>
   typeof weight === 'number' && weight > 0 && weight < 500
 
 
-function calculatePoints(age: number, pressure: number, pulse: number, weight: number, fields: Symptomes) {
+function calculatePoints(age: number, pressure: number, pulse: number, weight: number, fields: Symptoms) {
     let score = 0
     if (age >= 75) score += 3
     else if (age >= 65 && age < 75) score += 2
@@ -23,11 +23,7 @@ function calculatePoints(age: number, pressure: number, pulse: number, weight: n
     if (pulse > 100) score += 2
     if (weight < 67) score++
 
-    Object.values(fields).forEach(value => {
-        if(value) {
-            score++
-        }
-    })
+    score += Object.values(fields).reduce((sum, isRisk) => (isRisk ? sum + 1 : sum), 0)
     if (fields.killipTwo) score ++
     return score
 }
@@ -65,7 +61,7 @@ function calculateMortality(score: number) {
     }
 }
 
-function getTIMIStemi(age: number, pressure: number, pulse: number, weight: number, fields: Symptomes) {
+function getTIMIStemi(age: number, pressure: number, pulse: number, weight: number, fields: Symptoms) {
     if (!isValidAge(age)) {
         throw new Error('Invalid age for TIMI-score STEMI')
     }
