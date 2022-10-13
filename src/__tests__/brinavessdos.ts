@@ -23,3 +23,9 @@ test('It should return the correct amounts', () => {
     expect(secondInfusion.volume).toEqual(33.5)
     expect(secondInfusion.dosage).toEqual(201)
 })
+
+test('It should throw error for incorrect weight', () => {
+    expect(() => {
+        getBrinavess(1000)
+    }).toThrow('Invalid weight for brinavess')
+})
