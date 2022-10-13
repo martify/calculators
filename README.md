@@ -29,7 +29,7 @@
 - [x] Ögonsjukdomar
 - [x] Osmolgap
 - [x] Anjongap
-- [ ] CRB65
+- [x] CRB65
 - [ ] Basalmetabolism
 - [ ] Enhetsomvandlaren (funkar ej i nuläget)
 - [ ] Dos efter yta
