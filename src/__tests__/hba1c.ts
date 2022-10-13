@@ -71,3 +71,21 @@ test('It should return correct values', () => {
     expect(ifcc).toEqual(90)
     expect(jds).toEqual(10.09)
 })
+
+test('It should return correct values', () => {
+    const fields = {
+        ifcc: false,
+        monoS: true,
+        dcct: false,
+        jds: false,
+        mmol: false,
+        mg: false
+    }
+    const {mmol, mg, dcct, monoS, ifcc, jds} = convertHbA1c(6.5, fields)
+    expect(mmol).toEqual(9.2)
+    expect(mg).toEqual(165.52)
+    expect(dcct).toEqual(7.39)
+    expect(monoS).toEqual(6.5)
+    expect(ifcc).toEqual(57)
+    expect(jds).toEqual(7.04)
+})

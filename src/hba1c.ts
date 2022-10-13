@@ -1,4 +1,4 @@
-type Source = {
+export type Source = {
     ifcc: boolean,
     monoS: boolean,
     dcct: boolean,
@@ -34,7 +34,7 @@ function convertHbA1c(indata: number, fields: Source) {
         let ifcc = 10.45 * indata - 10.62
         let dcct = ifccToDCCT(ifcc)
         const {mmol, mg} = dcctToSugar(dcct)
-        return {mmol, mg, dcct: Math.round(dcct * 100) / 100, monoS: indata, ifcc: Math.round(ifcc), jds: ifccToJDS(indata)}
+        return {mmol, mg, dcct: Math.round(dcct * 100) / 100, monoS: indata, ifcc: Math.round(ifcc), jds: ifccToJDS(ifcc)}
     }
     else if (fields.dcct) {
         let ifcc = 10.93 * indata - 23.5
@@ -54,7 +54,7 @@ function convertHbA1c(indata: number, fields: Source) {
     }
     let dcct = (indata + 46.7) / 28.7
     let ifcc = 10.93 * dcct - 23.5
-    return {mmol: indata * 18, mg: indata, dcct: Math.round(dcct * 100) / 100, monoS: ifccToMonoS(ifcc), ifcc: Math.round(ifcc), jds: ifccToJDS(ifcc)}
+    return {mmol: Math.round(indata / 18 * 100) / 100, mg: indata, dcct: Math.round(dcct * 100) / 100, monoS: ifccToMonoS(ifcc), ifcc: Math.round(ifcc), jds: ifccToJDS(ifcc)}
 }
 
 export {convertHbA1c}
