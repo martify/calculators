@@ -27,7 +27,7 @@
 - [ ] Glasgow Coma Scale
 - [x] QTc
 - [x] Ögonsjukdomar
-- [ ] Osmolgap
+- [x] Osmolgap
 - [x] Anjongap
 - [ ] CRB65
 - [ ] Basalmetabolism
