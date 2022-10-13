@@ -2,6 +2,8 @@
 const isValidAge = (age: unknown): boolean => 
     typeof age === 'number' && age > 0 && age < 150
 
+const isValidPulse = (pulse: unknown): boolean =>
+    typeof pulse === 'number' && pulse > 40 && pulse < 250
 
 function calculateAgeRisk(age: number) {
     if (age < 35) {
@@ -189,6 +191,9 @@ function scoreToProb(score: number) {
 function getRisk(age: number, pulse: number, bloodPressure: number, creatine: number, killip: number, heartStop: boolean, stDeviation: boolean, hightendHeart: boolean) {
     if (!isValidAge(age)){
         throw new Error('Invalid age for grace score')
+    }
+    if(!isValidPulse(pulse)) {
+        throw new Error('Invalid heart beat for grace score')
     }
 
     let totalScore = calculateAgeRisk(age) + calculateCreatine(creatine) + calculateKillip(killip) + calculatePressure(bloodPressure) + calculatePulse(pulse)

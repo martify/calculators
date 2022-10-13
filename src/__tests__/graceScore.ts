@@ -25,3 +25,9 @@ test('It should throw error if invalid age', () => {
         getRisk(1000, 14, 54, 1, 2, false, false, false)
     }).toThrow('Invalid age for grace score')
 })
+
+test('It should throw error if invalid age', () => {
+    expect(() => {
+        getRisk(50, 14, 54, 1, 2, false, false, false)
+    }).toThrow('Invalid heart beat for grace score')
+})
