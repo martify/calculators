@@ -33,7 +33,7 @@
 - [ ] Basalmetabolism
 - [ ] Enhetsomvandlaren (funkar ej i nuläget)
 - [ ] Dos efter yta
-- [ ] Child-Pugh
+- [x] Child-Pugh
 - [ ] GRACE-SCORE
 - [ ] APRI-score
 - [ ] PERC-rule
