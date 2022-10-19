@@ -32,7 +32,7 @@
 - [x] CRB65
 - [x] Basalmetabolism
 - [ ] Enhetsomvandlaren (not working at the moment)
-- [ ] Dos efter yta
+- [x] Dos efter yta
 - [ ] Child-Pugh
 - [ ] GRACE-SCORE
 - [ ] APRI-score
