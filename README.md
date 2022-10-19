@@ -16,20 +16,20 @@
 - [x] WETBAGS-5A
 - [x] CHADSVASc
 - [x] CT Head Rule
-- [ ] Syrgas
-- [ ] Albuminkorrigerat kalcium
-- [ ] Kroppsyta
-- [ ] DVT-score
-- [ ] Lungemboli
-- [ ] NIHSS
+- [x] Syrgas
+- [x] Albuminkorrigerat kalcium
+- [x] Kroppsyta
+- [x] DVT-score
+- [x] Lungemboli
+- [x] NIHSS
 - [ ] Ottawa Ankle
-- [ ] Ottawa knee
+- [x] Ottawa knee
 - [ ] Glasgow Coma Scale
-- [ ] QTc
-- [ ] Ögonsjukdomar
-- [ ] Osmolgap
+- [x] QTc
+- [x] Ögonsjukdomar
+- [x] Osmolgap
 - [x] Anjongap
-- [ ] CRB65
+- [x] CRB65
 - [x] Basalmetabolism
 - [ ] Enhetsomvandlaren (not working at the moment)
 - [ ] Dos efter yta
@@ -39,13 +39,13 @@
 - [ ] PERC-rule
 - [ ] PESI-score
 - [ ] HAS-BLED
-- [ ] SCORE2
+- [ ] SCORE2 - måste införliva SCORE2OP i den.
 - [ ] AIR-score
 - [ ] GUCI
 - [ ] Winters formel
 - [ ] TIMI-score STEMI
 - [ ] TIMI-score NSTEMI
-- [ ] HbA1c
+- [ ] HbA1c - bara relevant om vi får in andra formler i samma kalkylator. HbA1c converter - bästa sidan för detta jag hittat
 - [ ] Insulin
 - [ ] Brinavessdos
 - [ ] pH-korrigerat kalcium
@@ -54,15 +54,13 @@
 - [ ] MEWS
 - [ ] Nexuskriterierna
 - [ ] Parklands formel
-- [ ] Alvaroscore
+- [ ] FIB-4 Score
 - [ ] Vattenunderskott
-- [ ] Calverts formel
+- [ ] Sunnybrook
 - [ ] Blatchford
 - [ ] Euroscore
 - [ ] ABC-score
-- [ ] ABCD2
+- [ ] NAFLD fibrosis score
 - [ ] Rockall
-- [ ] LDL beräknat
-- [ ] Sunnybrook
+- [ ] Calverts formel
 - [ ] Syncope Rule
-- [ ] Kardiovaskulär risk
