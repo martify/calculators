@@ -30,8 +30,8 @@
 - [x] Osmolgap
 - [x] Anjongap
 - [x] CRB65
-- [ ] Basalmetabolism
-- [ ] Enhetsomvandlaren (funkar ej i nuläget)
+- [x] Basalmetabolism
+- [ ] Enhetsomvandlaren (not working at the moment)
 - [ ] Dos efter yta
 - [ ] Child-Pugh
 - [ ] GRACE-SCORE
