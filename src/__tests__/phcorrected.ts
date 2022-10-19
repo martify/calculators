@@ -9,3 +9,9 @@ test.each`
 `('It should return the expected values', ({calcium, pH, expected}) => {
     expect(correctedCalcium(calcium, pH)).toEqual(expected)
 })
+
+test('It should throw error for invalid pH', () => {
+    expect(() => {
+        correctedCalcium(10, 100)
+    }).toThrow('Invalid pH')
+})
