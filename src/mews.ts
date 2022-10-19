@@ -49,5 +49,7 @@ function getMewsScore(fields: Data) {
         throw new Error('Invalid temperature for MEWS')
     }
     
-    return calcBreath(breath) + calcPressure(systBT) + calcPulse(pulse) + calcTemp(temp) + cns + urine
+    return calcBreath(fields.breath) + calcPressure(fields.systBT) + calcPulse(fields.pulse) + calcTemp(fields.temp) + fields.cns + fields.urine
 }
+
+export {getMewsScore, isValidHB, isValidTemp}
