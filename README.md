@@ -49,7 +49,7 @@
 - [ ] Insulin
 - [ ] Brinavessdos
 - [ ] pH-korrigerat kalcium
-- [ ] Promillehalt
+- [x] Promillehalt
 - [ ] MDRD
 - [ ] MEWS
 - [ ] Nexuskriterierna

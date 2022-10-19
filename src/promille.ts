@@ -1,4 +1,4 @@
-function getPromille(ethanol: number, plasmaOrSerum: boolean, unit: boolean) {
+function getPromille(ethanol: number, plasmaOrSerum: boolean, unitChange: boolean) {
     let clinical = 0
     let legal = 0
     
@@ -10,7 +10,7 @@ function getPromille(ethanol: number, plasmaOrSerum: boolean, unit: boolean) {
         legal = ethanol * 0.046 / 1.055 
     }
 
-    if (unit) {
+    if (unitChange) {
         clinical *= 18 / 100
         legal *= 18 / 100
     }
