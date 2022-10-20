@@ -55,7 +55,7 @@
 - [ ] Nexuskriterierna
 - [ ] Parklands formel
 - [ ] FIB-4 Score
-- [ ] Vattenunderskott
+- [x] Vattenunderskott
 - [ ] Sunnybrook
 - [ ] Blatchford
 - [ ] Euroscore

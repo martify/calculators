@@ -16,4 +16,4 @@ function calcWaterDefic(sNa: number, weight: number, patient: number) {
     return Math.round(k * weight *(sNa / 140 - 1) * 100) / 100
 }
 
-export {calcWaterDefic}
+export {calcWaterDefic, isValidWeight}
