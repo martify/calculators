@@ -54,7 +54,7 @@
 - [ ] MEWS
 - [ ] Nexuskriterierna
 - [ ] Parklands formel
-- [ ] FIB-4 Score
+- [x] FIB-4 Score
 - [ ] Vattenunderskott
 - [ ] Sunnybrook
 - [ ] Blatchford

@@ -11,3 +11,9 @@ test('It should return correct value', () => {
 test('It should return correct value', () => {
     expect(calcFib4(54, 31, 97, 26)).toEqual(26.19)
 })
+
+test('It should throw error if invalid age', () => {
+    expect(() => {
+        calcFib4(1000, 43, 43, 43)
+    }).toThrow('Invalid age for Fib-4')
+})
