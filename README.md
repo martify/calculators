@@ -57,7 +57,7 @@
 - [ ] FIB-4 Score
 - [ ] Vattenunderskott
 - [ ] Sunnybrook
-- [ ] Blatchford
+- [x] Blatchford
 - [ ] Euroscore
 - [ ] ABC-score
 - [ ] NAFLD fibrosis score
