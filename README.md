@@ -59,7 +59,7 @@
 - [ ] Sunnybrook
 - [ ] Blatchford
 - [ ] Euroscore
-- [ ] ABC-score
+- [x] ABC-score
 - [ ] NAFLD fibrosis score
 - [ ] Rockall
 - [ ] Calverts formel
