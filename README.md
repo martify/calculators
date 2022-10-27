@@ -63,4 +63,4 @@
 - [ ] NAFLD fibrosis score
 - [ ] Rockall
 - [ ] Calverts formel
-- [ ] Syncope Rule
+- [x] Syncope Rule
