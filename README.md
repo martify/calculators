@@ -61,6 +61,6 @@
 - [ ] Euroscore
 - [ ] ABC-score
 - [ ] NAFLD fibrosis score
-- [ ] Rockall
+- [x] Rockall
 - [ ] Calverts formel
 - [ ] Syncope Rule
