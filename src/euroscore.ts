@@ -19,7 +19,13 @@ export type Risks = {
     thoracic: boolean
 }
 
+const isValidAge = (age: unknown): boolean => 
+    typeof age === 'number' && age > 0 && age < 150
+
 function calcEuroscore(fields: Risks) {
+    if (!isValidAge(fields.age)) {
+        throw new Error('Invalid age for euroscore')
+    }
     const coeffs = {
         0: 0.2196434,
         1: {
@@ -91,4 +97,4 @@ function calcEuroscore(fields: Risks) {
 
 }
 
-export {calcEuroscore}
+export {calcEuroscore, isValidAge}

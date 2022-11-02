@@ -72,3 +72,29 @@ test('It should return the correct probability', () => {
     }
     expect(calcEuroscore(fields)).toEqual(12.35)
 })
+
+test('It should throw error for invalid age', () => {
+    const fields = {
+        age: 1000, // Input field
+        isFemale: false,
+        nyha: 1, // List 0-3
+        ccs4: false,
+        insulin: false,
+        extraCardiac: false,
+        cpd: false,
+        poorMob: false,
+        prevSurgery: false,
+        renal: 0, // List 0-3
+        AE: false,
+        critical: false,
+        lvFunc: 3, // List 0-3
+        recentMI: false,
+        pulmHyp: 2, // List 0-2
+        urgency: 1, // List 0-3
+        weightOf: 3, // List 0-3
+        thoracic: false
+    }
+    expect(() => {
+        calcEuroscore(fields)
+    }).toThrow('Invalid age for euroscore')
+})
