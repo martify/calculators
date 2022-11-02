@@ -58,7 +58,7 @@
 - [ ] Vattenunderskott
 - [ ] Sunnybrook
 - [ ] Blatchford
-- [ ] Euroscore
+- [x] Euroscore
 - [ ] ABC-score
 - [ ] NAFLD fibrosis score
 - [ ] Rockall

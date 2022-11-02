@@ -11,7 +11,7 @@ test('It should return the correct probability', () => {
         cpd: false,
         poorMob: false,
         prevSurgery: false,
-        renal: 0, // List 0-3
+        renal: 3, // List 0-3
         AE: false,
         critical: false,
         lvFunc: 0, // List 0-3
@@ -21,7 +21,7 @@ test('It should return the correct probability', () => {
         weightOf: 0, // List 0-3
         thoracic: false
     }
-    expect(calcEuroscore(fields)).toEqual(0.5)
+    expect(calcEuroscore(fields)).toEqual(0.94)
 })
 
 
