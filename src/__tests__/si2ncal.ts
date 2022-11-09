@@ -35,3 +35,20 @@ test('It should return the correct percentages', () => {
     expect(mort30).toEqual(9)
     expect(mortYear).toEqual(16)
 })
+
+test('It should throw error if invalid age', () => {
+    const fields = {
+        age: 200,
+        glucose: 5,
+        hemoglobin: 81,
+        female: false,
+        hemorrhage: true,
+        infection: false,
+        focalDef: true,
+        coma: false,
+        cancer: true
+    }
+    expect(() => {
+        calcSi2NCal(fields)
+    }).toThrow('Invalid age for Si2NCal2C')
+})

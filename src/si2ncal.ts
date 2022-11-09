@@ -11,7 +11,13 @@ export type Risks = {
     cancer: boolean
 }
 
+const isValidAge = (age: unknown): boolean => 
+    typeof age === 'number' && age > 0 && age < 150
+
 function calcSi2NCal(fields: Risks) {
+    if (!isValidAge(fields.age)) {
+        throw new Error('Invalid age for Si2NCal2C')
+    }
     const coeffs = [
         [0.14, 0.064],
         [-0.015, -0.007],
