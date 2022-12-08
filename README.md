@@ -56,7 +56,7 @@
 - [ ] Parklands formel
 - [ ] FIB-4 Score
 - [ ] Vattenunderskott
-- [ ] Sunnybrook
+- [x] Sunnybrook
 - [ ] Blatchford
 - [ ] Euroscore
 - [ ] ABC-score
