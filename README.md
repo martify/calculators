@@ -45,7 +45,7 @@
 - [ ] Winters formel
 - [ ] TIMI-score STEMI
 - [ ] TIMI-score NSTEMI
-- [ ] HbA1c - bara relevant om vi får in andra formler i samma kalkylator. HbA1c converter - bästa sidan för detta jag hittat
+- [x] HbA1c - bara relevant om vi får in andra formler i samma kalkylator. HbA1c converter - bästa sidan för detta jag hittat
 - [ ] Insulin
 - [ ] Brinavessdos
 - [ ] pH-korrigerat kalcium
