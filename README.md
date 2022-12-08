@@ -50,7 +50,7 @@
 - [ ] Brinavessdos
 - [ ] pH-korrigerat kalcium
 - [ ] Promillehalt
-- [ ] MDRD
+- [x] MDRD
 - [ ] MEWS
 - [ ] Nexuskriterierna
 - [ ] Parklands formel
