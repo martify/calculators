@@ -60,7 +60,7 @@
 - [ ] Blatchford
 - [ ] Euroscore
 - [ ] ABC-score
-- [ ] NAFLD fibrosis score
+- [x] NAFLD fibrosis score
 - [ ] Rockall
 - [ ] Calverts formel
 - [ ] Syncope Rule
