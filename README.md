@@ -53,7 +53,7 @@
 - [ ] MDRD
 - [ ] MEWS
 - [ ] Nexuskriterierna
-- [ ] Parklands formel
+- [x] Parklands formel
 - [ ] FIB-4 Score
 - [ ] Vattenunderskott
 - [ ] Sunnybrook
