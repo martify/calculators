@@ -39,7 +39,7 @@
 - [ ] PERC-rule
 - [ ] PESI-score
 - [ ] HAS-BLED
-- [ ] SCORE2 - måste införliva SCORE2OP i den.
+- [x] SCORE2 - måste införliva SCORE2OP i den.
 - [ ] AIR-score
 - [ ] GUCI
 - [ ] Winters formel
