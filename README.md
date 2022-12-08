@@ -51,7 +51,7 @@
 - [ ] pH-korrigerat kalcium
 - [ ] Promillehalt
 - [ ] MDRD
-- [ ] MEWS
+- [x] MEWS
 - [ ] Nexuskriterierna
 - [ ] Parklands formel
 - [ ] FIB-4 Score
