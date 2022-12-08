@@ -62,5 +62,5 @@
 - [ ] ABC-score
 - [ ] NAFLD fibrosis score
 - [ ] Rockall
-- [ ] Calverts formel
+- [x] Calverts formel
 - [ ] Syncope Rule
