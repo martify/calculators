@@ -41,7 +41,7 @@
 - [ ] HAS-BLED
 - [ ] SCORE2 - måste införliva SCORE2OP i den.
 - [ ] AIR-score
-- [ ] GUCI
+- [x] GUCI
 - [ ] Winters formel
 - [ ] TIMI-score STEMI
 - [ ] TIMI-score NSTEMI
