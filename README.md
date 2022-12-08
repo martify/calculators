@@ -42,7 +42,7 @@
 - [ ] SCORE2 - måste införliva SCORE2OP i den.
 - [ ] AIR-score
 - [ ] GUCI
-- [ ] Winters formel
+- [x] Winters formel
 - [ ] TIMI-score STEMI
 - [ ] TIMI-score NSTEMI
 - [ ] HbA1c - bara relevant om vi får in andra formler i samma kalkylator. HbA1c converter - bästa sidan för detta jag hittat
