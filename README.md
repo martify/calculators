@@ -52,7 +52,7 @@
 - [ ] Promillehalt
 - [ ] MDRD
 - [ ] MEWS
-- [ ] Nexuskriterierna
+- [x] Nexuskriterierna
 - [ ] Parklands formel
 - [ ] FIB-4 Score
 - [ ] Vattenunderskott
