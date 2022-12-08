@@ -48,7 +48,7 @@
 - [ ] HbA1c - bara relevant om vi får in andra formler i samma kalkylator. HbA1c converter - bästa sidan för detta jag hittat
 - [ ] Insulin
 - [ ] Brinavessdos
-- [ ] pH-korrigerat kalcium
+- [x] pH-korrigerat kalcium
 - [ ] Promillehalt
 - [ ] MDRD
 - [ ] MEWS
