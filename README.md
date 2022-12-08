@@ -37,7 +37,7 @@
 - [ ] GRACE-SCORE
 - [ ] APRI-score
 - [ ] PERC-rule
-- [ ] PESI-score
+- [x] PESI-score
 - [ ] HAS-BLED
 - [ ] SCORE2 - måste införliva SCORE2OP i den.
 - [ ] AIR-score
